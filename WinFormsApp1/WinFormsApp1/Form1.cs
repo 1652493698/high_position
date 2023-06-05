@@ -7,10 +7,13 @@ using System.Data.SqlClient;
 using System.Drawing;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
 
+
 namespace WinFormsApp1
 {
+    
     public partial class Form1 : Form
     {
+        public static string Id;
         public Form1()
         {
             InitializeComponent();
@@ -20,6 +23,7 @@ namespace WinFormsApp1
         {
 
         }
+       
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -41,6 +45,10 @@ namespace WinFormsApp1
                 if (dr.Read())
                 {
                     MessageBox.Show("µÇÂ¼³É¹¦£¡");
+                    Form3 f3 = new Form3();
+                    Id = Username;
+                    this.Hide();
+                    f3.ShowDialog();
                 }
                 else
                 {

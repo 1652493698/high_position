@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\VS代码\\WinFormsApp1\\WinFormsApp1\\WinFormsApp1.csproj": {}
+    "D:\\Git代码\\high_position\\WinFormsApp1\\WinFormsApp1\\WinFormsApp1.csproj": {}
   },
   "projects": {
-    "D:\\VS代码\\WinFormsApp1\\WinFormsApp1\\WinFormsApp1.csproj": {
+    "D:\\Git代码\\high_position\\WinFormsApp1\\WinFormsApp1\\WinFormsApp1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\VS代码\\WinFormsApp1\\WinFormsApp1\\WinFormsApp1.csproj",
+        "projectUniqueName": "D:\\Git代码\\high_position\\WinFormsApp1\\WinFormsApp1\\WinFormsApp1.csproj",
         "projectName": "WinFormsApp1",
-        "projectPath": "D:\\VS代码\\WinFormsApp1\\WinFormsApp1\\WinFormsApp1.csproj",
+        "projectPath": "D:\\Git代码\\high_position\\WinFormsApp1\\WinFormsApp1\\WinFormsApp1.csproj",
         "packagesPath": "C:\\Users\\qxy99\\.nuget\\packages\\",
-        "outputPath": "D:\\VS代码\\WinFormsApp1\\WinFormsApp1\\obj\\",
+        "outputPath": "D:\\Git代码\\high_position\\WinFormsApp1\\WinFormsApp1\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "D:\\Microsoft Visual Studio\\Shared\\NuGetPackages"

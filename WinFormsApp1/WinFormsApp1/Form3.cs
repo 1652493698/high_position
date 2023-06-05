@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace WinFormsApp1
 {
@@ -24,7 +25,73 @@ namespace WinFormsApp1
 
         private void Form3_Load(object sender, EventArgs e)
         {
+            label1.Text = Form1.Id;
 
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog openfile = new OpenFileDialog();
+
+            if (openfile.ShowDialog() == DialogResult.OK && (openFileDialog1.FileName != "")) ;
+            {
+                pictureBox1.ImageLocation = openfile.FileName;
+
+            }
+
+            openfile.Dispose();
+        }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label7_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            int i=0;
+            
+            if (i != 0)
+            {
+                MessageBox.Show("您已鉴定灵根，无法重新鉴定！");
+            }
+            else {
+               
+                Random ran = new Random();
+                int n = ran.Next(1,10);
+                switch (n) {
+                    case 1:
+                        MessageBox.Show("鉴定成功，您的灵根为：木灵根！");
+                        label11.Text = "木";
+                        break;
+                    case 2:
+                        MessageBox.Show("鉴定成功，您的灵根为：金灵根！");
+                        label11.Text = "金";
+                        break;
+                    case 3:
+                        MessageBox.Show("鉴定成功，您的灵根为：水灵根！");
+                        label11.Text = "水";
+                        break;
+                    case 4:
+                        MessageBox.Show("鉴定成功，您的灵根为：火灵根！");
+                        label11.Text = "火";
+                        break;
+                    case 5:
+                        MessageBox.Show("鉴定成功，您的灵根为：土灵根！");
+                        label11.Text = "土";
+                        break;
+                        
+
+                }
+                i++;
+                
+
+            }
         }
     }
 }
