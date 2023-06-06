@@ -47,6 +47,7 @@
             label13 = new Label();
             button2 = new Button();
             button3 = new Button();
+            button4 = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
@@ -90,7 +91,7 @@
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Microsoft YaHei UI", 10.8F, FontStyle.Bold, GraphicsUnit.Point);
-            label2.Location = new Point(148, 4);
+            label2.Location = new Point(124, 7);
             label2.Name = "label2";
             label2.Size = new Size(66, 25);
             label2.TabIndex = 3;
@@ -100,17 +101,18 @@
             // 
             label3.AutoSize = true;
             label3.Font = new Font("Microsoft YaHei UI", 10.8F, FontStyle.Bold, GraphicsUnit.Point);
-            label3.Location = new Point(148, 66);
+            label3.Location = new Point(124, 66);
             label3.Name = "label3";
             label3.Size = new Size(66, 25);
             label3.TabIndex = 4;
             label3.Text = "修为：";
+            label3.Click += label3_Click;
             // 
             // label4
             // 
             label4.AutoSize = true;
             label4.Font = new Font("Microsoft YaHei UI", 10.8F, FontStyle.Bold, GraphicsUnit.Point);
-            label4.Location = new Point(148, 121);
+            label4.Location = new Point(124, 121);
             label4.Name = "label4";
             label4.Size = new Size(66, 25);
             label4.TabIndex = 5;
@@ -120,7 +122,7 @@
             // 
             label5.AutoSize = true;
             label5.Font = new Font("Microsoft YaHei UI", 10.8F, FontStyle.Bold, GraphicsUnit.Point);
-            label5.Location = new Point(220, 4);
+            label5.Location = new Point(186, 6);
             label5.Name = "label5";
             label5.Size = new Size(30, 25);
             label5.TabIndex = 6;
@@ -130,7 +132,7 @@
             // 
             label6.AutoSize = true;
             label6.Font = new Font("Microsoft YaHei UI", 10.8F, FontStyle.Bold, GraphicsUnit.Point);
-            label6.Location = new Point(220, 66);
+            label6.Location = new Point(186, 66);
             label6.Name = "label6";
             label6.Size = new Size(84, 25);
             label6.TabIndex = 7;
@@ -141,7 +143,7 @@
             // 
             label7.AutoSize = true;
             label7.Font = new Font("Microsoft YaHei UI", 10.8F, FontStyle.Bold, GraphicsUnit.Point);
-            label7.Location = new Point(220, 121);
+            label7.Location = new Point(186, 121);
             label7.Name = "label7";
             label7.Size = new Size(84, 25);
             label7.TabIndex = 8;
@@ -220,18 +222,30 @@
             // 
             // button3
             // 
-            button3.Location = new Point(271, 3);
+            button3.Location = new Point(279, 1);
             button3.Name = "button3";
-            button3.Size = new Size(94, 29);
+            button3.Size = new Size(80, 34);
             button3.TabIndex = 16;
             button3.Text = "加入宗门";
             button3.UseVisualStyleBackColor = true;
+            button3.Click += button3_Click;
+            // 
+            // button4
+            // 
+            button4.Location = new Point(12, 369);
+            button4.Name = "button4";
+            button4.Size = new Size(80, 54);
+            button4.TabIndex = 17;
+            button4.Text = "宗门";
+            button4.UseVisualStyleBackColor = true;
+            button4.Click += button4_Click;
             // 
             // Form3
             // 
             AutoScaleDimensions = new SizeF(9F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(595, 494);
+            ClientSize = new Size(595, 435);
+            Controls.Add(button4);
             Controls.Add(button3);
             Controls.Add(button2);
             Controls.Add(label13);
@@ -278,5 +292,6 @@
         private Label label13;
         private Button button2;
         private Button button3;
+        private Button button4;
     }
 }

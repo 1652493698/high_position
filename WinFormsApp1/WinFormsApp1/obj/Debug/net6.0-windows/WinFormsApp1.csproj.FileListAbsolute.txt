@@ -52,3 +52,5 @@ D:\Git代码\high_position\WinFormsApp1\WinFormsApp1\obj\Debug\net6.0-windows\Wi
 D:\Git代码\high_position\WinFormsApp1\WinFormsApp1\obj\Debug\net6.0-windows\WinFormsApp1.genruntimeconfig.cache
 D:\Git代码\high_position\WinFormsApp1\WinFormsApp1\obj\Debug\net6.0-windows\ref\WinFormsApp1.dll
 D:\Git代码\high_position\WinFormsApp1\WinFormsApp1\obj\Debug\net6.0-windows\WinFormsApp1.Properties.Resources.resources
+D:\Git代码\high_position\WinFormsApp1\WinFormsApp1\obj\Debug\net6.0-windows\WinFormsApp1.Form4.resources
+D:\Git代码\high_position\WinFormsApp1\WinFormsApp1\obj\Debug\net6.0-windows\WinFormsApp1.Form5.resources

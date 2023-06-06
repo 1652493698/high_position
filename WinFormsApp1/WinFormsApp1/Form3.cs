@@ -13,6 +13,7 @@ namespace WinFormsApp1
 {
     public partial class Form3 : Form
     {
+        public static int t=0;
         public Form3()
         {
             InitializeComponent();
@@ -26,6 +27,15 @@ namespace WinFormsApp1
         private void Form3_Load(object sender, EventArgs e)
         {
             label1.Text = Form1.Id;
+           
+            if (Form4.zmID == "")
+            {
+                label5.Text = "无";
+            }
+            else
+            {
+                label5.Text = Form4.zmID;
+            }
 
         }
 
@@ -109,6 +119,33 @@ namespace WinFormsApp1
             int ys = Convert.ToInt32(xs);
             ys = ys + 648;
             label13.Text = Convert.ToString(ys);
+        }
+
+        //加入宗门
+        private void button3_Click(object sender, EventArgs e)
+        {
+            if (Form4.zm == 0)
+            {
+                Form4 f4 = new Form4();
+                this.Hide();
+                f4.ShowDialog();
+            }
+
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+        //宗门管理页面
+        private void button4_Click(object sender, EventArgs e)
+        {
+            if (Form4.zm == 1) {
+                Form5 f5 = new Form5();
+                this.Hide();
+                f5.ShowDialog();
+            }
         }
     }
 }
