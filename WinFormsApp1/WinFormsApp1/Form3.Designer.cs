@@ -45,6 +45,8 @@
             label11 = new Label();
             label12 = new Label();
             label13 = new Label();
+            button2 = new Button();
+            button3 = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
@@ -118,7 +120,7 @@
             // 
             label5.AutoSize = true;
             label5.Font = new Font("Microsoft YaHei UI", 10.8F, FontStyle.Bold, GraphicsUnit.Point);
-            label5.Location = new Point(235, 4);
+            label5.Location = new Point(220, 4);
             label5.Name = "label5";
             label5.Size = new Size(30, 25);
             label5.TabIndex = 6;
@@ -128,7 +130,7 @@
             // 
             label6.AutoSize = true;
             label6.Font = new Font("Microsoft YaHei UI", 10.8F, FontStyle.Bold, GraphicsUnit.Point);
-            label6.Location = new Point(235, 66);
+            label6.Location = new Point(220, 66);
             label6.Name = "label6";
             label6.Size = new Size(84, 25);
             label6.TabIndex = 7;
@@ -139,7 +141,7 @@
             // 
             label7.AutoSize = true;
             label7.Font = new Font("Microsoft YaHei UI", 10.8F, FontStyle.Bold, GraphicsUnit.Point);
-            label7.Location = new Point(235, 121);
+            label7.Location = new Point(220, 121);
             label7.Name = "label7";
             label7.Size = new Size(84, 25);
             label7.TabIndex = 8;
@@ -174,7 +176,7 @@
             label10.Name = "label10";
             label10.Size = new Size(66, 25);
             label10.TabIndex = 11;
-            label10.Text = "灵石：";
+            label10.Text = "仙石：";
             // 
             // label11
             // 
@@ -202,15 +204,36 @@
             label13.Font = new Font("Microsoft YaHei UI", 10.8F, FontStyle.Bold, GraphicsUnit.Point);
             label13.Location = new Point(437, 121);
             label13.Name = "label13";
-            label13.Size = new Size(66, 25);
+            label13.Size = new Size(45, 25);
             label13.TabIndex = 14;
-            label13.Text = "灵根：";
+            label13.Text = "100";
+            // 
+            // button2
+            // 
+            button2.Location = new Point(503, 121);
+            button2.Name = "button2";
+            button2.Size = new Size(80, 29);
+            button2.TabIndex = 15;
+            button2.Text = "充值仙石";
+            button2.UseVisualStyleBackColor = true;
+            button2.Click += button2_Click;
+            // 
+            // button3
+            // 
+            button3.Location = new Point(271, 3);
+            button3.Name = "button3";
+            button3.Size = new Size(94, 29);
+            button3.TabIndex = 16;
+            button3.Text = "加入宗门";
+            button3.UseVisualStyleBackColor = true;
             // 
             // Form3
             // 
             AutoScaleDimensions = new SizeF(9F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(595, 494);
+            Controls.Add(button3);
+            Controls.Add(button2);
             Controls.Add(label13);
             Controls.Add(label12);
             Controls.Add(label11);
@@ -228,6 +251,7 @@
             Controls.Add(label1);
             Name = "Form3";
             Text = "青云文字修仙";
+            FormClosed += Form3_FormClosed;
             Load += Form3_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
@@ -252,5 +276,7 @@
         private Label label11;
         private Label label12;
         private Label label13;
+        private Button button2;
+        private Button button3;
     }
 }

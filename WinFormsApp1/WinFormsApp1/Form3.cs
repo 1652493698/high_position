@@ -51,20 +51,18 @@ namespace WinFormsApp1
         {
 
         }
-
+        //灵根模块
+        private static int count = 0;//标识
         private void button1_Click(object sender, EventArgs e)
         {
-            int i=0;
-            
-            if (i != 0)
+
+
+            if (count == 0)
             {
-                MessageBox.Show("您已鉴定灵根，无法重新鉴定！");
-            }
-            else {
-               
                 Random ran = new Random();
-                int n = ran.Next(1,10);
-                switch (n) {
+                int n = ran.Next(1, 10);
+                switch (n)
+                {
                     case 1:
                         MessageBox.Show("鉴定成功，您的灵根为：木灵根！");
                         label11.Text = "木";
@@ -85,13 +83,32 @@ namespace WinFormsApp1
                         MessageBox.Show("鉴定成功，您的灵根为：土灵根！");
                         label11.Text = "土";
                         break;
-                        
+
 
                 }
-                i++;
-                
+
+
+                count++;
+
 
             }
+            else
+            {
+                MessageBox.Show("已鉴定，无法重新鉴定");
+            }
+        }
+
+        private void Form3_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
+        }
+        //充值
+        private void button2_Click(object sender, EventArgs e)
+        {
+            string xs = label13.Text;
+            int ys = Convert.ToInt32(xs);
+            ys = ys + 648;
+            label13.Text = Convert.ToString(ys);
         }
     }
 }
